@@ -14,3 +14,7 @@ if __name__ == "__main__":
 
 debug = os.environ.get('FLASK_DEBUG', 'False') == 'True'
 app.run(debug=debug, host='0.0.0.0', port=port)
+
+output_dir = "results"
+os.makedirs(output_dir, exist_ok=True)  # This ensures the folder is created
+
